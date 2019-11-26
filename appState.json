@@ -1,0 +1,145 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "9ad9ff14-2dbd-4783-b07a-2530feebba22": {
+        "id": "9ad9ff14-2dbd-4783-b07a-2530feebba22",
+        "parent": null,
+        "name": "hiru1126gcppython",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "0d24d1de-a1a5-4c8d-89db-7e9a90aba4fe",
+          "b492a728-3d3f-4513-85ac-be4c14f1c546",
+          "2cc5d001-66f5-4f3e-b203-3ab9289399ce"
+        ],
+        "isRemovable": false,
+        "filePath": "hiru1126gcppython"
+      },
+      "0d24d1de-a1a5-4c8d-89db-7e9a90aba4fe": {
+        "id": "0d24d1de-a1a5-4c8d-89db-7e9a90aba4fe",
+        "parent": "9ad9ff14-2dbd-4783-b07a-2530feebba22",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1126gcppython/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "17ae3aa0-e2c2-4dfc-aa2f-5e9a9d5f28af": {
+        "id": "17ae3aa0-e2c2-4dfc-aa2f-5e9a9d5f28af",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.hiru1126gcppythonfunction = require(\"./hiru1126gcppython/function.js\").handler;"
+      },
+      "4f5d93dd-3757-4ef0-91a9-f4145dd48e18": {
+        "id": "4f5d93dd-3757-4ef0-91a9-f4145dd48e18",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nfrom hiru1126gcppython.hirutest import handler as hiru1126gcppythonhirutest"
+      },
+      "b492a728-3d3f-4513-85ac-be4c14f1c546": {
+        "id": "b492a728-3d3f-4513-85ac-be4c14f1c546",
+        "parent": "9ad9ff14-2dbd-4783-b07a-2530feebba22",
+        "name": "hirutest.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1126gcppython/hirutest.py",
+        "code": "def handler(request):\n    \n    return \"Successfully executed\"\n",
+        "config": {
+          "runtime": "python37",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "2cc5d001-66f5-4f3e-b203-3ab9289399ce": {
+        "id": "2cc5d001-66f5-4f3e-b203-3ab9289399ce",
+        "parent": "9ad9ff14-2dbd-4783-b07a-2530feebba22",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru1126gcppython/__init__.py",
+        "code": ""
+      }
+    },
+    "rootNode": "9ad9ff14-2dbd-4783-b07a-2530feebba22",
+    "openFiles": [
+      "0d24d1de-a1a5-4c8d-89db-7e9a90aba4fe",
+      "b492a728-3d3f-4513-85ac-be4c14f1c546"
+    ],
+    "currentFileId": "b492a728-3d3f-4513-85ac-be4c14f1c546",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "b492a728-3d3f-4513-85ac-be4c14f1c546",
+        "varKey": "PYTHONPATH",
+        "varValue": "/var/runtime:/var/task/hiru1126gcppython",
+        "shouldPersist": true,
+        "displayOnly": false,
+        "editable": true
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "hiru1126gcppython",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1574749957804
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "hiru1126gcppython",
+      "url": "https://github.com/HirudineeADRT/hiru1126gcppython"
+    }
+  }
+}
